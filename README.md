@@ -27,13 +27,13 @@ A simple and intuitive task management application built with **Node.js**, **Exp
 ## Screenshots
 
 ### Login Page  
-![Login Page](login.png)
+![Login Page](screenshots/login.png)
 
 ### Signup Page  
-![Signup Page](signup.png)
+![Signup Page](screenshots/signup.png)
 
 ### Task Manager Page  
-![Task Manager Page](taskmanager.png)
+![Task Manager Page](screenshots/taskmanager.png)
 
 ---
 
