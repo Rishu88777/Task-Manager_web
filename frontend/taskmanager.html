@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-tasks"></i> Task Manager</h1>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        <div id="user-info">
+            <i class="fas fa-user"></i>
+            <span id="user-name"></span>
+        </div>
+
+        <h2><i class="fas fa-list"></i> Your Tasks</h2>
+        <div id="task-form">
+            <div class="input-group">
+                <i class="fas fa-pencil-alt"></i>
+                <input type="text" id="task-name" placeholder="Enter task name">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-align-left"></i>
+                <textarea id="task-desc" placeholder="Enter task description"></textarea>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-tasks"></i>
+                <select id="task-status">
+                    <option value="Pending">Pending</option>
+                    <option value="In Process">In Process</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <button id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Display user's name on the Task Manager page
+        const userName = localStorage.getItem('userName');
+        if (userName) {
+            document.getElementById('user-name').textContent = userName;
+        } else {
+            console.error('User name not found in localStorage');
+        }
+    </script>
+</body>
+</html>

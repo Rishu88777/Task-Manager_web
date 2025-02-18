@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff; /* White text for better contrast */
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background: #1a1a1a; /* Dark gray container background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff0000; /* Green heading */
+}
+
+h1 i {
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff; /* White heading */
+}
+
+h2 i {
+  margin-right: 10px;
+}
+
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 5px;
+  padding: 10px;
+  background: #3d3636; /* Dark gray input background */
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #121010;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  color: #dcd3d3; /* White text for inputs */
+}
+
+.input-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196F3; /* Blue button */
+  color: rgb(203, 195, 195);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e88e5; /* Darker blue on hover */
+}
+
+button i {
+  margin-right: 10px;
+}
+
+/* Edit Button */
+button.edit-btn {
+  background-color: #FFC107; /* Yellow edit button */
+  color: #000; /* Black text for better contrast */
+}
+
+button.edit-btn:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Delete Button */
+button.delete-btn {
+  background-color: #F44336; /* Red delete button */
+  color: rgb(205, 28, 28);
+}
+
+button.delete-btn:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Task List */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272121; /* Dark gray task item background */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task-item div {
+  flex: 1;
+  text-align: left;
+}
+
+.task-item button {
+  background: none;
+  border: none;
+  color: #d5eda3;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.task-item button:hover {
+  color: #120e0e; /* White on hover */
+}
+
+/* Task Status */
+.task-status {
+  font-size: 14px;
+  color: #f6f4f4;
+  margin-top: 5px;
+}
+
+.task-status.pending {
+  color: #ff9800; /* Orange for pending */
+}
+
+.task-status.in-process {
+  color: #2196f3; /* Blue for in process */
+}
+
+.task-status.completed {
+  color: #4caf50; /* Green for completed */
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  margin: 10px 0;
+}
+
+/* Links */
+a {
+  color: #2196F3; /* Blue links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1e88e5; /* Darker blue on hover */
+  text-decoration: underline;
+}
+/* User Info Section */
+#user-info {
+  position: absolute;
+  top: 10px;
+  right: 80px; /* Adjust based on logout button size */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+#user-info i {
+  margin-right: 5px;
+}
