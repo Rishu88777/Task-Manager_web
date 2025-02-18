@@ -179,5 +179,5 @@ If you have any questions or feedback, feel free to reach out:
 
 📧 **Email**: rishushrivastava264@gmail.com  
 🐙 **GitHub**: [Rishu88777](https://github.com/Rishu88777)  
-🔗 **Project Link**: [Task Manager](https://github.com/Rishu88777/task_manager_web)
+🔗 **Project Link**: [Task Manager](https://github.com/Rishu88777/Task-Manager_web)
 
