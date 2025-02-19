@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://task-manager-backend-4axd.onrender.com/api';
 
 // Handle login
 document.getElementById('loginForm')?.addEventListener('submit', async function (event) {
